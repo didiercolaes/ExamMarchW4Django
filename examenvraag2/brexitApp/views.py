@@ -9,5 +9,5 @@ from datetime import date
 def index (request):
     time = datetime.datetime.now() 
     ukTime = datetime.datetime(2019, 3,29, 23)
-    delta = ukTime - time +1
+    delta = ukTime - time
     return render(request, 'index.html', {'time': delta})
